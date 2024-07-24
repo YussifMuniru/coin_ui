@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="description" content="Notes Smart Contracts" />
+        <meta name="charset" content="utf-8" />
+        <ink rel="stylesheet" href="style.css" />
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <p>Contract Notes</p>
+            <div>
+                <input  type="text" name="note" placeholder="Enter the notes here" id="note_text" />
+                <button id="set_note"  onclick="setNote()">Set Note</button>
+                <button id="view_note" onclick="getNote()">Get Note</button>
+            </div>
+            <div>This is the note: <span id="fetched_note"></span></div>
+        </div>
+    </body>
+</html>
