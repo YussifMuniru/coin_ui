@@ -12,11 +12,13 @@
         <div>
             <p>Contract Notes</p>
             <div>
-                <input  type="text" name="note" placeholder="Enter the notes here" id="note_text" />
-                <button id="set_note"  onclick="setNote()">Set Note</button>
-                <button id="view_note" onclick="getNote()">Get Note</button>
+                <input  type="text" name="receipient_addr" placeholder="Enter receipient address" id="addr" />
+                <input  type="text" name="amount"          placeholder="Enter amount" id="amount" />
+                <button id="set_note"  onclick="mintCoins()"> Mint Coins</button>
+                <button id="view_note" onclick="getBalance()">Get Coins</button>
+                <button id="set_note"  onclick="sendCoins()">Send Coins</button>
             </div>
-            <div>This is the note: <span id="fetched_note"></span></div>
+            <div>The available for addr: <span id="addr"></span>: <span id="avail_bal"></span></div>
         </div>
     </body>
 </html>
